@@ -57,7 +57,7 @@
 
 	<h1>Darky.js</h1>
 	<p>Add a dark-mode to your website in seconds. No hassle, no reworking your entire codebase!</p>
-	<small>The library is inspired by the <a href="https: //dev.to/wgao19/night-mode-with-mix-blend-mode-difference-23lm">work of Wei Gao</a></small>
+	<small>The library is inspired by the <a href="https://dev.to/wgao19/night-mode-with-mix-blend-mode-difference-23lm">work of Wei Gao</a></small>
 	<br>
 	<a href="/lib/1.0.0/darky.min.js" download class="button">Download</a>
 	<a href="#docs" class="button outline">Documentation</a>
