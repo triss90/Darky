@@ -3,3 +3,4 @@ assets/.DS_Store
 run.sh
 .vscode
 .vscode/*
+assets/img/.DS_Store
