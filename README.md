@@ -2,7 +2,9 @@
 
 Download: [Darky.js]([https://darky.app/lib/1.0.0/darky.min.js])
 
-Documentation: [Darky.app]([https://darky.app/])
+Documentation: [Darky.app]([https://darky.app/#docs])
+
+Changelog: [Darky.app]([https://darky.app/#changelog])
 
 ## How to use Darky
 
