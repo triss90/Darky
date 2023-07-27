@@ -293,7 +293,7 @@ main,
 footer {
   margin: 0 auto;
   max-width: var(--width-content);
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
 }
 
 header {
@@ -324,7 +324,7 @@ nav {
   display: flex;
   font-weight: bold;
   justify-content: space-between;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
 }
 
 nav ul {
