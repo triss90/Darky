@@ -1,6 +1,8 @@
 # Documentation
 
-()
+Download: [Darky.js]([https://darky.app/lib/1.0.0/darky.min.js])
+
+Documentation: [Darky.app]([https://darky.app/])
 
 ## How to use Darky
 

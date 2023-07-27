@@ -8,18 +8,20 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/assets/css/app.css">
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+	<link rel="stylesheet" href="/assets/css/highlightjs.css">
 
-	<meta name="description" content="Page description">
-	<meta property="og:title" content="Unique page title - My Site">
-	<meta property="og:description" content="Page description">
-	<meta property="og:image" content="https://www.mywebsite.com/image.jpg">
-	<meta property="og:image:alt" content="Image description">
+	<meta name="description" content="A light, easy-to-use JavaScript library that allows developers to quickly and efficiently implement dark mode on their websites. This library dynamically changes the CSS styles of your website to provide a night mode effect that reduces the light emitted by the screen.">
+	<meta name="keywords" content="DarkModeJS, JavaScript Dark Mode Library, Enable Dark Mode with JavaScript, Web Dark Mode Solution, Implement Dark Mode on Website, Easy Dark Mode JavaScript, Dynamic Theme Change JavaScript, Dark Mode for Web Developers, Dark Mode CSS Transformation, JavaScript Library for Dark Mode, Night Mode Web Development, Web Design Dark Mode JavaScript, Light/Dark Theme Switch JavaScript, Dark Mode Toggle JS, User Preference Dark Mode JavaScript, Web Content Accessibility Guidelines Dark Mode, WCAG Dark Mode Implementation, Dark Theme JS Library, Dark Mode for Web Accessibility, Dark Mode Color Preservation JS, Reduce Screen Light Emission with JS, Dark Mode JS for UI/UX, Web Aesthetics Dark Mode JavaScript, Create Dark Mode with JS, Dark Mode User Experience Enhancement">
+	<meta property="og:title" content="Darky.js">
+	<meta property="og:description" content="A light, easy-to-use JavaScript library that allows developers to quickly and efficiently implement dark mode on their websites. This library dynamically changes the CSS styles of your website to provide a night mode effect that reduces the light emitted by the screen.">
+	<meta property="og:image" content="https://darky.app/assets/img/dark/android-chrome-512x512.png">
+	<meta property="og:image:alt" content="Darky logo">
 	<meta property="og:locale" content="en_GB">
 	<meta property="og:type" content="website">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta property="og:url" content="https://www.mywebsite.com/page">
-	<link rel="canonical" href="https://www.mywebsite.com/page">
+
+	<meta property="og:url" content="https://darky.app">
+	<link rel="canonical" href="https://darky.app">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/light/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/light/favicon-32x32.png">
@@ -30,42 +32,34 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-config" content="/assets/img/light/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
-
-	<!-- <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/dark/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/dark/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/dark/favicon-16x16.png">
-	<link rel="manifest" href="/assets/img/dark/site.webmanifest">
-	<link rel="mask-icon" href="/assets/img/dark/safari-pinned-tab.svg" color="#2762ff">
-	<link rel="shortcut icon" href="/assets/img/dark/favicon.ico">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-config" content="/assets/img/dark/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff"> -->
-
 </head>
 
 
 <body>
 
-<header>
-	<nav>
-		<a href="/">Darky.js</a>
-		<ul>
-			<li><a href="#docs">Docs</a></li>
-			<li><a href="https://github.com/triss90/Darky" target="_blank">GitHub</a></li>
-		</ul>
-	</nav>
+<div class="header-bg">
+	<header>
+		<nav>
+			<a href="/">Darky.js</a>
+			<ul>
+				<li><a href="#docs">Docs</a></li>
+				<li><a href="#changelog">Changelog</a></li>
+				<li><a href="https://github.com/triss90/Darky" target="_blank">GitHub</a></li>
+			</ul>
+		</nav>
 
-	<h1>Darky.js</h1>
-	<p>Add a dark-mode to your website in seconds. No hassle, no reworking your entire codebase!</p>
-	<br>
-	<a href="/lib/1.0.0/darky.min.js" download class="button">Download</a>
-	<a href="#docs" class="button outline">Documentation</a>
-</header>
+		<h1>Darky.js</h1>
+		<p>Add a dark mode to your website in seconds. No hassle, no reworking your entire codebase!</p>
+		<br>
+		<a href="/lib/1.0.0/darky.min.js" download class="button">Download</a>
+		<a href="#docs" class="button outline">Documentation</a>
+	</header>
+</div>
+
 
 
 <main>
-
-<hr>
+<br>
 <h2 id="docs">Documentation</h2><br>
 <h3>How to use Darky</h3>
 <p>Include the Darky.js library in your HTML file and Instantiate a new Darky object to add a darkmode toggle to your webpage:</p>
@@ -165,12 +159,25 @@ darkmode.enable();
 }</code></pre></li>
 </ol>
 
+<h2 id="changelog">Changelog</h2><br>
+<h3>v1.0.0 (initial release)</h3>
+<ul>
+	<li><strong>Added: </strong>general support for darkmode.</li>
+	<li><strong>Added: </strong>callback when darkmode is triggered</li>
+	<li><strong>Added: </strong>suppport for native os darkmode</li>
+	<li><strong>Added: </strong>save user choice in cookie</li>
+</ul>
+
 <hr>
 <footer>
 	<section>
 		<div style="text-align:center">
 			<p>Made by <a href="https://triss.dev">Tristan White</a></p>
 			<p><small>The library is inspired by the <a href="https://dev.to/wgao19/night-mode-with-mix-blend-mode-difference-23lm">work of Wei Gao</a></small></p>
+			<a href="#docs">Docs</a> |
+			<a href="#changelog">Changelog</a> |
+			<a href="https://github.com/triss90/Darky" target="_blank">GitHub</a> |
+			<a href="/lib/1.0.0/darky.min.js" download>Download</a>
 		</div>
 	</section>
 </footer>
