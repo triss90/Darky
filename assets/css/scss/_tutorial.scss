@@ -1,0 +1,21 @@
+.tutorial {
+	position: fixed;
+	right: 44px;
+	bottom: 264px;
+	background: #ababab;
+	width: 300px;
+	color: #fff;
+	padding: 16px;
+	border-radius: 10px;
+}
+.tutorial-arrow {
+	position: fixed;
+	right: 84px;
+	bottom: 20px;
+	width: 300px;
+	height: auto;
+	transform: rotate(25deg);
+}
+.tutorial-arrow path {
+	stroke: #ababab;
+}

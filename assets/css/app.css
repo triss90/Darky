@@ -1,0 +1,576 @@
+@charset "UTF-8";
+/* Project Settings */ /* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+li,
+dt,
+dd,
+blockquote,
+.no-orphan {
+  text-wrap: pretty;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  /* UI Colors */
+  --primary-hue: 12;
+  --color--primary: hsl(var(--primary-hue), 100%, 44%);
+  --color--primary--hover: hsl(var(--primary-hue), 100%, 39%);
+  --color--primary--active: hsl(var(--primary-hue), 84%, 30%);
+  /* ... */
+  --border-color: #ebebeb;
+  /* Box Shadows */
+  --shadow-01: 0px 2px 4px rgba(37, 37, 37, 0.1);
+  --shadow-02: 0px 4px 8px rgba(37, 37, 37, 0.1);
+  --shadow-03: 0px 8px 16px rgba(37, 37, 37, 0.1);
+  --shadow-04: 0px 16px 24px rgba(37, 37, 37, 0.1);
+  --shadow-05: 0px 24px 32px rgba(37, 37, 37, 0.1);
+  /* ... */
+}
+
+/* Project Styles */
+/*
+Name:           HTML.digital
+Description:    A reinterpretation of the browser's stylesheet
+Version:        v1.0.0
+Author:         Tristan White
+Author URI:     https://html.digital
+*/
+/***********************************************/
+/******************** VARIABLES ****************/
+/***********************************************/
+:root {
+  /* Base color scheme (fallback) */
+  --color-primary: #f74469;
+  --color-accent: #118bee0b;
+  --color-bg: #fff;
+  --color-bg-secondary: #ddd;
+  --color-secondary: #2762ff;
+  --color-secondary-accent: #920de90b;
+  --color-shadow: #f4f4f4;
+  --color-text: #19191a;
+  --color-text-secondary: #999;
+  --color-success: #00a03e;
+  --color-warning: #ffd800;
+  --color-error: #dd0a35;
+  /* Other variables */
+  --border-radius: 4px;
+  --box-shadow: 2px 2px 10px;
+  --hover-brightness: 1.18;
+  --align-center: center;
+  --align-left: left;
+  --line-height: 150%;
+  --width-card: 285px;
+  --width-card-medium: 460px;
+  --width-card-wide: 800px;
+  --width-content: 1080px;
+}
+
+/***********************************************/
+/******************** RESET ********************/
+/***********************************************/
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+/***********************************************/
+/******************** TYPOGRAPHY ***************/
+/***********************************************/
+html,
+body {
+  color: var(--color-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: var(--line-height);
+}
+
+img {
+  max-width: 100%;
+}
+
+code {
+  display: inline-block;
+  margin: 0.1rem;
+  padding: 0rem 0.5rem;
+  vertical-align: middle;
+}
+
+code,
+samp {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  border-radius: var(--border-radius);
+  text-align: var(--justify-normal);
+  word-break: normal;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: var(--line-height);
+}
+
+mark {
+  padding: 0.1rem;
+}
+
+ol li,
+ul li {
+  padding: 0.2rem 0;
+}
+
+p {
+  margin: 0.75rem 0;
+  padding: 0;
+}
+
+samp {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  max-width: var(--width-card-wide);
+  padding: 1rem;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+small {
+  color: var(--color-text-secondary);
+}
+
+sup {
+  background-color: var(--color-secondary);
+  border-radius: var(--border-radius);
+  color: var(--color-bg);
+  font-size: xx-small;
+  font-weight: bold;
+  margin: 0.2rem;
+  padding: 0.2rem 0.3rem;
+  position: relative;
+  top: -2px;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  filter: brightness(var(--hover-brightness));
+  text-decoration: underline;
+}
+
+blockquote {
+  display: block;
+  font-size: x-large;
+  line-height: var(--line-height);
+  margin: 1rem auto;
+  padding: 1.5rem 1rem;
+  max-width: var(--width-card-medium);
+  text-align: var(--justify-important);
+}
+
+blockquote footer {
+  color: var(--color-text-secondary);
+  display: block;
+  font-size: small;
+  line-height: var(--line-height);
+  padding: 1.5rem 0;
+}
+
+hr {
+  background-color: var(--color-bg-secondary);
+  border: none;
+  height: 1px;
+  margin: 4rem 0;
+}
+
+/***********************************************/
+/******************** GENERAL ******************/
+/***********************************************/
+html,
+body {
+  background: var(--color-bg);
+}
+
+header,
+main,
+footer {
+  margin: 0 auto;
+  max-width: var(--width-content);
+  padding: 2rem 1rem;
+}
+
+header {
+  text-align: var(--align-center);
+  width: 100%;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: var(--align-center);
+}
+
+section header  {
+  padding-top: 0;
+  width: 100% !important;
+}
+
+footer {
+  padding: 2rem 1rem;
+}
+
+/***********************************************/
+/******************** NAVIGATION ***************/
+/***********************************************/
+nav {
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  margin-bottom: 7rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+nav ul li a {
+  color: var(--color-secondary);
+}
+
+/***********************************************/
+/******************** TABLES *******************/
+/***********************************************/
+table {
+  border: 1px solid var(--color-bg-secondary);
+  border-radius: var(--border-radius);
+  border-spacing: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 0;
+  width: 100%;
+}
+
+table td,
+table th,
+table tr {
+  padding: 0.4rem 0.8rem;
+  text-align: var(--align-center);
+}
+
+table thead {
+  background-color: var(--color-primary);
+  border-collapse: collapse;
+  border-radius: var(--border-radius);
+  color: var(--color-bg);
+  margin: 0;
+  padding: 0;
+}
+
+table thead th:first-child {
+  border-top-left-radius: var(--border-radius);
+  text-align: var(--align-left);
+}
+
+table thead th:last-child {
+  border-top-right-radius: var(--border-radius);
+}
+
+table thead tr td:first-child {
+  text-align: var(--align-left);
+}
+
+table tbody tr td:first-child {
+  text-align: var(--align-left);
+}
+
+/***********************************************/
+/******************** CARDS *******Z************/
+/***********************************************/
+section aside {
+  background: transparent !important;
+  /* Overwrites article>aside when nesting */
+  border: 1px solid var(--color-bg-secondary) !important;
+  /* Overwrites article>aside when nesting */
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow) var(--color-shadow);
+  margin: 1rem;
+  padding: 1.25rem !important;
+  /* Overwrites article>aside when nesting */
+  width: var(--width-card);
+  transition: box-shadow ease-in-out 175ms;
+}
+
+section aside:hover {
+  box-shadow: var(--box-shadow) var(--color-bg-secondary);
+}
+
+section aside img {
+  margin: 0 auto;
+  width: 90%;
+  display: block;
+}
+
+article aside {
+  background: var(--color-secondary-accent);
+  border-left: 4px solid var(--color-primary);
+  padding: 0.01rem 0.8rem;
+}
+
+/***********************************************/
+/******************** INPUTS *******************/
+/***********************************************/
+input,
+select,
+textarea {
+  background: transparent;
+  border: 1px solid var(--color-bg-secondary);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow) var(--color-shadow);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+input[type=color] {
+  padding: 0.15rem;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  color: var(--color-text);
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='currentColor' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 0.45rem;
+  padding-right: 1.45rem;
+}
+
+progress,
+meter {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 1.25rem;
+  position: relative;
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow) var(--color-shadow);
+  background: var(--color-bg-secondary);
+}
+
+progress::-webkit-progress-bar,
+progress::-moz-progress-bar {
+  background: var(--color-bg);
+  border-radius: var(--border-radius);
+}
+
+progress::-webkit-progress-value,
+progress::-moz-progress-bar {
+  background: var(--color-primary);
+  border-radius: var(--border-radius);
+}
+
+meter::-webkit-meter-bar,
+meter::-moz-meter-bar {
+  background: var(--color-bg-secondary);
+  box-shadow: none;
+  border-radius: var(--border-radius);
+}
+
+meter::-webkit-meter-optimum-value,
+meter:-moz-meter-optimum::-moz-meter-bar {
+  background: var(--color-success);
+  border-radius: var(--border-radius);
+}
+
+meter::-webkit-meter-suboptimum-value,
+meter:-moz-meter-sub-optimum::-moz-meter-bar {
+  background: var(--color-warning);
+  border-radius: var(--border-radius);
+}
+
+meter::-webkit-meter-even-less-good-value,
+meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+  background: var(--color-error);
+  border-radius: var(--border-radius);
+}
+
+/***********************************************/
+/******************** BUTTONS ******************/
+/***********************************************/
+button,
+input[type=submit],
+.button,
+a > b,
+a > i {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: var(--line-height);
+  font-style: normal;
+  color: var(--color-bg);
+  background: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  padding: 0.75rem 1.15rem;
+  margin: 1.5rem 0 0.5rem 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button.outline {
+  color: var(--color-primary);
+  background: transparent;
+  border: 2px solid var(--color-primary);
+}
+
+.button.outline:hover {
+  color: var(--color-bg);
+  background: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+button:hover,
+input[type=submit]:hover,
+.button:hover,
+a > b:hover,
+a > i:hover {
+  filter: brightness(var(--hover-brightness));
+  text-decoration: none;
+}
+
+a > i {
+  background: transparent;
+  color: var(--color-primary);
+}
+
+.tutorial {
+  position: fixed;
+  right: 44px;
+  bottom: 264px;
+  background: #ababab;
+  width: 300px;
+  color: #fff;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.tutorial-arrow {
+  position: fixed;
+  right: 84px;
+  bottom: 20px;
+  width: 300px;
+  height: auto;
+  transform: rotate(25deg);
+}
+
+.tutorial-arrow path {
+  stroke: #ababab;
+}/*# sourceMappingURL=app.css.map */
