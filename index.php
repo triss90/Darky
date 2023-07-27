@@ -9,7 +9,7 @@
 		<h1>Darky.js</h1>
 		<p><strong>Add a dark mode to your website in seconds. No hassle, no reworking your entire codebase!</strong></p>
 		<br>
-		<a href="/lib/1.1.1/darky.min.js" download class="button"><i class="fa fa-cloud-download" aria-hidden="true"></i> Download</a>
+		<a href="/lib/1.1.2/darky.min.js" download class="button"><i class="fa fa-cloud-download" aria-hidden="true"></i> Download</a>
 		<a href="#docs" class="button outline"><i class="fa fa-book" aria-hidden="true"></i> Documentation</a>
 	</header>
 </div>
@@ -21,13 +21,13 @@
 <p>Include the Darky.js library in your HTML file and Instantiate a new Darky object to add a darkmode toggle to your webpage:</p>
 
 <h4>The easy way (JSDelivr CDN)</h4>
-<pre><code class="language-html">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/darkyjs@1.1.1/1.1.1/darky.min.js&quot;&gt;&lt;/script&gt;
+<pre><code class="language-html">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/darkyjs@1.1.2/1.1.2/darky.min.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   const darkmode = new Darky();
   darkmode.enable();
 &lt;/script&gt;</code></pre>
 
-<p>Or <a href="/lib/1.1.1/darky.min.js" download>download the library</a> and host it yourself.</p>
+<p>Or <a href="/lib/1.1.2/darky.min.js" download>download the library</a> and host it yourself.</p>
 
 <h4>Using NPM</h4>
 <pre><code class="language-bash">npm install darkyjs</code></pre>
@@ -124,6 +124,10 @@ darkmode.enable();
 </ol>
 
 <h2 id="changelog">Changelog</h2><br>
+<h3>v1.1.2</h3>
+<ul>
+	<li><strong>Fix - </strong> Made the transition from light to dark more smooth</li>
+</ul>
 <h3>v1.1.1</h3>
 <ul>
 	<li><strong>Fix - </strong> Solve problem where Darky would override custom backgrounds</li>
