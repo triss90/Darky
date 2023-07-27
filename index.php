@@ -70,7 +70,7 @@
 <h3>How to use Darky</h3>
 <p>Include the Darky.js library in your HTML file and Instantiate a new Darky object to add a darkmode toggle to your webpage:</p>
 
-<pre><code class="language-html">&lt;script src=&quot;/assets/js/darky.js&quot;&gt;&lt;/script&gt;
+<pre><code class="language-html">&lt;script src=&quot;/path/to/darky.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   const darkmode = new Darky();
   darkmode.enableWidget();

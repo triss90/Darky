@@ -1,11 +1,13 @@
 # Documentation
 
+()
+
 ## How to use Darky
 
 Include the Darky.js library in your HTML file and Instantiate a new Darky object to add a darkmode toggle to your webpage:
 
 ```js
-<script src="/assets/js/darky.js"></script>
+<script src="/path/to/darky.js"></script>
 <script>
     const darkmode = new Darky();
     darkmode.enableWidget();
