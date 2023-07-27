@@ -286,7 +286,7 @@ hr {
 /***********************************************/
 html,
 body {
-  background: var(--color-bg);
+  background-color: var(--color-bg);
 }
 
 header,
