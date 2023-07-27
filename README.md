@@ -1,5 +1,7 @@
 # Darky.js documentation
 
+Darky.js is a light, easy-to-use JavaScript library that allows developers to quickly and efficiently implement dark mode on their websites. This library dynamically changes the CSS styles of your website to provide a night mode effect that reduces the light emitted by the screen.
+
 [Download Darky.js]([https://darky.app/lib/1.0.0/darky.min.js]) | [Documentation]([https://darky.app/#docs]) | [Changelog]([https://darky.app/#changelog])
 
 ## How to use Darky
