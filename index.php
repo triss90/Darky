@@ -7,7 +7,7 @@
 		<?php include "_inc/nav.php";?>
 
 		<h1>Darky.js</h1>
-		<p>Add a dark mode to your website in seconds. No hassle, no reworking your entire codebase!</p>
+		<p><strong>Add a dark mode to your website in seconds. No hassle, no reworking your entire codebase!</strong></p>
 		<br>
 		<a href="/lib/1.1.0/darky.min.js" download class="button"><i class="fa fa-cloud-download" aria-hidden="true"></i> Download</a>
 		<a href="#docs" class="button outline"><i class="fa fa-book" aria-hidden="true"></i> Documentation</a>
