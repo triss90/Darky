@@ -299,7 +299,8 @@ footer {
 
 .header-bg {
   background-image: url("/assets/img/bg.svg");
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
+  box-shadow: inset 0px -100px 100px -10px rgba(255, 255, 255, 0.9);
 }
 
 header {
