@@ -8,7 +8,7 @@
 			<a href="#changelog">Changelog</a> |
 			<a href="https://github.com/triss90/Darky" target="_blank">GitHub</a> |
 			<a href="https://www.npmjs.com/package/darkyjs" target="_blank">npm</a> <br>
-			<a href="/lib/1.0.0/darky.min.js" download>Download</a> |
+			<a href="/lib/1.1.2/darky.min.js" download>Download</a> |
 			<a href="https://github.com/triss90/Darky/issues" target="_blank">Request feature</a> |
 			<a href="https://github.com/triss90/Darky/issues" target="_blank">Report bug</a>
 		</div>
