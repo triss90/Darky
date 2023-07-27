@@ -4,6 +4,8 @@ Darky.js is a light, easy-to-use JavaScript library that allows developers to qu
 
 [Download]([https://darky.app/]) | [Documentation]([https://darky.app/#docs]) | [Changelog]([https://darky.app/#changelog])
 
+[I'm an inline-style link](https://www.google.com)
+
 ## How to use Darky
 
 Include the Darky.js library in your HTML file and Instantiate a new Darky object to add a darkmode toggle to your webpage:
