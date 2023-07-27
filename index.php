@@ -9,7 +9,7 @@
 		<h1>Darky.js</h1>
 		<p>Add a dark mode to your website in seconds. No hassle, no reworking your entire codebase!</p>
 		<br>
-		<a href="/lib/1.0.2/darky.min.js" download class="button">Download</a>
+		<a href="/lib/1.0.4/darky.min.js" download class="button">Download</a>
 		<a href="#docs" class="button outline">Documentation</a>
 	</header>
 </div>
@@ -21,13 +21,13 @@
 <p>Include the Darky.js library in your HTML file and Instantiate a new Darky object to add a darkmode toggle to your webpage:</p>
 
 <h4>The easy way (JSDelivr CDN)</h4>
-<pre><code class="language-html">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/darkyjs@1.0.2/1.0.2/darky.min.js&quot;&gt;&lt;/script&gt;
+<pre><code class="language-html">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/darkyjs@1.0.4/1.0.4/darky.min.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   const darkmode = new Darky();
   darkmode.enable();
 &lt;/script&gt;</code></pre>
 
-<p>Or <a href="/lib/1.0.2/darky.min.js" download>download the library</a> and host it yourself.</p>
+<p>Or <a href="/lib/1.0.4/darky.min.js" download>download the library</a> and host it yourself.</p>
 
 <h4>Using NPM</h4>
 <pre><code class="language-bash">npm install darkyjs</code></pre>
@@ -122,6 +122,14 @@ darkmode.enable();
 </ol>
 
 <h2 id="changelog">Changelog</h2><br>
+<h3>v1.0.4</h3>
+<ul>
+	<li><strong>Update: </strong>documentation links</li>
+</ul>
+<h3>v1.0.3</h3>
+<ul>
+	<li><strong>Update: </strong>documentation links</li>
+</ul>
 <h3>v1.0.2</h3>
 <ul>
 	<li><strong>Update: </strong>documentation to reflect proper method names</li>

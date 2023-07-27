@@ -1,0 +1,13 @@
+{
+	"name": "darkyjs",
+	"version": "1.0.4",
+	"description": "A light, easy-to-use JavaScript library that allows developers to quickly and efficiently implement dark mode on their websites. This library dynamically changes the CSS styles of your website to provide a night mode effect that reduces the light emitted by the screen.",
+	"main": "darky.min.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/triss90/Darky/tree/main"
+	},
+	"author": "Tristan White",
+	"homepage": "https://darky.app/",
+	"license": "MIT"
+}
