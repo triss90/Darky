@@ -126,7 +126,8 @@ darkmode.enable();
 <h2 id="changelog">Changelog</h2><br>
 <h3>v1.1.0</h3>
 <ul>
-	<li><strong>Added - </strong> Added button shadow control.</li>
+	<li><strong>Added - </strong> Added button shadow control</li>
+	<li><strong>Fix - </strong> Fixed an issue where dark mode would require a preset background color</li>
 	<li><strong>Fix - </strong> Override background changed from <code>background</code> to <code>background-color</code> to be less disruptive</li>
 </ul>
 <h3>v1.0.4</h3>
