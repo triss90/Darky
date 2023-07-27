@@ -20,7 +20,7 @@
 		this.onChange = this.options.onChange;
 		this.css = `
 			body {
-				background: ${this.backgroundColor};
+				background-color: ${this.backgroundColor};
 			}
 			.darkmode--background, 
 			.darkmode--trigger {
@@ -44,7 +44,7 @@
 					border-radius: 0;
 					transform: scale(100);
 					box-shadow: none;
-					background: ${this.backgroundColor};
+					background-color: ${this.backgroundColor};
   					mix-blend-mode: difference;
 				}
 				.darkmode--background.darkmode--enabled {
