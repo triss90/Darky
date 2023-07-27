@@ -11,11 +11,11 @@ Author URI:     https://html.digital
 /***********************************************/
 :root {
 	/* Base color scheme (fallback) */
-	--color-primary: #f74469;
+	--color-primary: #f40076;
 	--color-accent: #118bee0b;
 	--color-bg: #fff;
 	--color-bg-secondary: #ddd;
-	--color-secondary: #2762ff;
+	--color-secondary: #19191a;
 	--color-secondary-accent: #920de90b;
 	--color-shadow: #f4f4f4;
 	--color-text: #19191a;
@@ -61,6 +61,7 @@ html {
 }
 body {
 	margin: 0;
+	padding: 0;
 }
 
 /***********************************************/
@@ -195,6 +196,10 @@ footer {
 	padding: 1rem 1rem;
 }
 
+.header-bg {
+	background-image: url("/assets/img/bg.svg");
+	padding-bottom: 4rem;
+}
 header {
 	text-align: var(--align-center);
 	width: 100%;
