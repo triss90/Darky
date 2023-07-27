@@ -123,7 +123,9 @@ darkmode.enable();
 }</code></pre></li>
 </ol>
 
-<h2 id="changelog">Changelog</h2><br>
+<h2 id="changelog">Changelog</h2>
+<p>Download <a href="/lib/1.1.2/darky.min.js" download>latest release</a> or see <a href="https://github.com/triss90/Darky/releases" target="_blank">previous releases</a>.</p>
+<br>
 <h3>v1.1.2</h3>
 <ul>
 	<li><strong>Fix - </strong> Made the transition from light to dark more smooth</li>
