@@ -164,7 +164,7 @@ darkmode.enable();
 <ul>
 	<li><strong>Added: </strong>general support for darkmode.</li>
 	<li><strong>Added: </strong>callback when darkmode is triggered</li>
-	<li><strong>Added: </strong>suppport for native os darkmode</li>
+	<li><strong>Added: </strong>support for native os darkmode</li>
 	<li><strong>Added: </strong>save user choice in cookie</li>
 </ul>
 
