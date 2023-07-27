@@ -15,7 +15,9 @@ Include the Darky.js library in your HTML file and Instantiate a new Darky objec
 ```
 
 ## Options
+
 Here are the available options
+
 * **bottom:** (String) CSS value for the widget position from the bottom. Defaults to "32px".
 * **right:** (String) CSS value for the widget position from the right. Defaults to "32px".
 * **left:** (String) CSS value for the widget position from the left. Defaults to "unset".
@@ -29,7 +31,7 @@ Here are the available options
 * **autoMatchOsTheme:** (Boolean) if set to true, the color theme will automatically match the user's OS preference. Defaults to true.
 * **onChnge:** (Function) Provides a callback whenever darkmode is toggled on or off. Defaults to false
 
-### Example:
+### Example
 
 ```js
 const options = {
@@ -60,7 +62,7 @@ Use the following methods to interact with the Darky library:
 * `darky.toggle();`: This method toggles the darkmode on or off. When called, it checks the current mode and changes it to the opposite one.
 * `darky.isEnabled();`: This method checks if darkmode is currently enabled and returns a boolean value.
 
-### Example:
+### Example
 
 ```js
 const darkmode = new Darky();
@@ -70,11 +72,14 @@ darkmode.isEnabled();   // Returns true if darkmode is enabled
 ```
 
 ## Events
+
 The following events are available:
+
 * **onChange**: This callback function fires whenever darkmode is toggled on or off and returns the result of the defined JS.
 
 ### Example
-```js 
+
+```js
 const darkmode = new Darky(
     onChange: function() {
     console.log('Darkmode was toggled');
@@ -94,18 +99,18 @@ By default the following elements are not converted to dark mode: `img`, `pictur
 <span class="darkmode--ignore">I AM NOT DARKMODE<span>
 ```
 
-2. Add the following CSS to the element:
+1. Add the following CSS to the element:
 
 ```css
 .element {
     isolation: isolate;
 }
 ```
- 
-3. Revert the darkmode like so
+
+1. Revert the darkmode like so
 
 ```css
 .darkmode--enabled .element {
     mix-blend-mode: difference;
 }
-``````
+```
