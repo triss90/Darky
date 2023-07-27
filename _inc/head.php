@@ -7,8 +7,9 @@
 	<title>Darky.js</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="/assets/css/app.css">
 	<link rel="stylesheet" href="/assets/css/highlightjs.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/assets/css/app.css">
 
 	<meta name="description" content="A light, easy-to-use JavaScript library that allows developers to quickly and efficiently implement dark mode on their websites. This library dynamically changes the CSS styles of your website to provide a night mode effect that reduces the light emitted by the screen.">
 	<meta name="keywords" content="DarkModeJS, JavaScript Dark Mode Library, Enable Dark Mode with JavaScript, Web Dark Mode Solution, Implement Dark Mode on Website, Easy Dark Mode JavaScript, Dynamic Theme Change JavaScript, Dark Mode for Web Developers, Dark Mode CSS Transformation, JavaScript Library for Dark Mode, Night Mode Web Development, Web Design Dark Mode JavaScript, Light/Dark Theme Switch JavaScript, Dark Mode Toggle JS, User Preference Dark Mode JavaScript, Web Content Accessibility Guidelines Dark Mode, WCAG Dark Mode Implementation, Dark Theme JS Library, Dark Mode for Web Accessibility, Dark Mode Color Preservation JS, Reduce Screen Light Emission with JS, Dark Mode JS for UI/UX, Web Aesthetics Dark Mode JavaScript, Create Dark Mode with JS, Dark Mode User Experience Enhancement">

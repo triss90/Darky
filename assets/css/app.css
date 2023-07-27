@@ -514,9 +514,7 @@ meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
 /***********************************************/
 button,
 input[type=submit],
-.button,
-a > b,
-a > i {
+.button {
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
@@ -546,16 +544,9 @@ a > i {
 
 button:hover,
 input[type=submit]:hover,
-.button:hover,
-a > b:hover,
-a > i:hover {
+.button:hover {
   filter: brightness(var(--hover-brightness));
   text-decoration: none;
-}
-
-a > i {
-  background: transparent;
-  color: var(--color-primary);
 }
 
 .tutorial {
