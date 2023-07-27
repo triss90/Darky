@@ -195,7 +195,7 @@ darkmode.enable();
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 
-<script src="/assets/js/darky.js"></script>
+<script src="/src/darky.js"></script>
 <script>
 	const options = {
 		bottom: "32px",
