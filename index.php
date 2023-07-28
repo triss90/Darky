@@ -9,7 +9,7 @@
 		<h1>Darky.js</h1>
 		<p><strong>Add a dark mode to your website in seconds. No hassle, no reworking your entire codebase!</strong></p>
 		<br>
-		<a href="/lib/1.1.2/darky.min.js" download class="button"><i class="fa fa-cloud-download" aria-hidden="true"></i> Download</a>
+		<a href="/lib/1.2.0/darky.min.js" download class="button"><i class="fa fa-cloud-download" aria-hidden="true"></i> Download</a>
 		<a href="#docs" class="button outline"><i class="fa fa-book" aria-hidden="true"></i> Documentation</a>
 	</header>
 </div>
@@ -21,13 +21,13 @@
 <p>Include the Darky.js library in your HTML file and Instantiate a new Darky object to add a darkmode toggle to your webpage:</p>
 
 <h4>The easy way (JSDelivr CDN)</h4>
-<pre><code class="language-html">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/darkyjs@1.1.2/1.1.2/darky.min.js&quot;&gt;&lt;/script&gt;
+<pre><code class="language-html">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/darkyjs@1.2.0/1.2.0/darky.min.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   const darkmode = new Darky();
   darkmode.enable();
 &lt;/script&gt;</code></pre>
 
-<p>Or <a href="/lib/1.1.2/darky.min.js" download>download the library</a> and host it yourself.</p>
+<p>Or <a href="/lib/1.2.0/darky.min.js" download>download the library</a> and host it yourself.</p>
 
 <h4>Using NPM</h4>
 <pre><code class="language-bash">npm install darkyjs</code></pre>
@@ -43,7 +43,6 @@
 	<li><strong>backgroundColor:</strong> (String) CSS value for the background color in dark mode. Defaults to "#fff".</li>
 	<li><strong>buttonColorDark:</strong> (String) CSS value for the dark mode button color. Defaults to "#000".</li>
 	<li><strong>buttonColorLight:</strong> (String) CSS value for the light mode button color. Defaults to "#fff".</li>
-	<li><strong>buttonShadow:</strong> (String) CSS value for the button shadow. Defaults to "0 0.2rem 0.5rem 0.1rem rgba(0,0,0,0.4)".</li>
 	<li><strong>label.dark:</strong> (String) HTML content for the dark mode button label. Defaults to a SVG moon icon.</li>
 	<li><strong>label.light:</strong> (String) HTML content for the light mode button label. Defaults to a SVG sun icon.</li>
 	<li><strong>saveInCookies:</strong> (Boolean) if set to true, the user's preference will be saved in a cookie. Defaults to false.</li>
@@ -59,7 +58,6 @@
   backgroundColor: "#fff",
   buttonColorDark: "#000",
   buttonColorLight: "#fff",
-  buttonShadow: "0 0.2rem 0.5rem 0.1rem rgba(0,0,0,0.4)",
   label: {
     dark: &#039;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;icon light&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;2&quot; stroke=&quot;currentColor&quot; fill=&quot;none&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path stroke=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot; fill=&quot;none&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M6.343 17.657l-1.414 1.414&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M6.343 6.343l-1.414 -1.414&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M17.657 6.343l1.414 -1.414&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M17.657 17.657l1.414 1.414&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M4 12h-2&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M12 4v-2&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M20 12h2&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M12 20v2&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&#039;,
     light: &#039;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;icon dark&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;2&quot; stroke=&quot;currentColor&quot; fill=&quot;none&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path stroke=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot; fill=&quot;none&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&#039;,
@@ -124,8 +122,14 @@ darkmode.enable();
 </ol>
 
 <h2 id="changelog">Changelog</h2>
-<p>Download <a href="/lib/1.1.2/darky.min.js" download>latest release</a> or see <a href="https://github.com/triss90/Darky/releases" target="_blank">previous releases</a>.</p>
+<p>Download <a href="/lib/1.2.0/darky.min.js" download>latest release</a> or see <a href="https://github.com/triss90/Darky/releases" target="_blank">previous releases</a>.</p>
 <br>
+<h3>v1.2.0</h3>
+<ul>
+	<li><strong>Update - </strong> Refactor applied styles to triggers</li>
+	<li><strong>Fix - </strong> Fixed a bug where underlying elements would be visible through the trigger button</li>
+	<li><strong>Remove - </strong> Removed <code>box-shadow</code> feature. This can still be applied by adding the necessary CSS to the <code>darkmode--trigger</code> class</li>
+</ul>
 <h3>v1.1.2</h3>
 <ul>
 	<li><strong>Fix - </strong> Made the transition from light to dark more smooth</li>
@@ -146,15 +150,15 @@ darkmode.enable();
 </ul>
 <h3>v1.0.3</h3>
 <ul>
-	<li><strong>Added - </strong> AddedDocumentation links</li>
+	<li><strong>Added - </strong> Added documentation links</li>
 </ul>
 <h3>v1.0.2</h3>
 <ul>
-	<li><strong>Update - </strong> Documentation now reflect proper method names</li>
+	<li><strong>Update - </strong> Documentation now reflects proper method names</li>
 </ul>
 <h3>v1.0.1</h3>
 <ul>
-	<li><strong>Fix - </strong> Issue with NPM package links</li>
+	<li><strong>Fix - </strong> Solve issue with NPM package links</li>
 </ul>
 <h3>v1.0.0 (initial release)</h3>
 <ul>
