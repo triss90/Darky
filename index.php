@@ -61,7 +61,7 @@
   label: {
     dark: &#039;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;icon light&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;2&quot; stroke=&quot;currentColor&quot; fill=&quot;none&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path stroke=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot; fill=&quot;none&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M6.343 17.657l-1.414 1.414&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M6.343 6.343l-1.414 -1.414&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M17.657 6.343l1.414 -1.414&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M17.657 17.657l1.414 1.414&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M4 12h-2&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M12 4v-2&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M20 12h2&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M12 20v2&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&#039;,
     light: &#039;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;icon dark&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;2&quot; stroke=&quot;currentColor&quot; fill=&quot;none&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path stroke=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot; fill=&quot;none&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&#039;,
-},
+  },
   saveInCookies: false,
   autoMatchOsTheme: true,
   onChange: false
