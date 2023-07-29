@@ -3,6 +3,7 @@
 	position: fixed;
 	color: #19191a;
 	transition: all 300ms ease;
+	pointer-events: none;
 }
 .darkmode--enabled .guide-text,
 .darkmode--enabled .guide-arrow {
@@ -13,10 +14,12 @@
 	bottom: 164px;
 	right: 70px;
 	opacity: 0;
-	animation-duration: 1.5s;
+	animation-duration: 10s;
 	animation-fill-mode: forwards;
 	animation-name: fade;
+	animation-delay: 2s;
 	font-weight: bold;
+	text-align: center;
 }
 .guide-arrow {
 	bottom: 74px;
@@ -30,24 +33,69 @@
 		fill: none;
 		stroke-dasharray: 400;
 		stroke-dashoffset: 400;
-		animation-duration: 2s;
+		animation-duration: 10s;
 		animation-fill-mode: forwards;
 		animation-name: draw;
+		animation-delay: 2s;
 		&.tail-1 {
-			animation-delay: 0.5s;
+			animation-delay: 2.3s;
 		}
 		&.tail-2 {
-			animation-delay: 0.7s;
+			animation-delay: 2.4s;
 		}
 	}
 }
 @keyframes draw {
-	to {
+	0% {
+		stroke-dashoffset: 400;
+	}
+	20% {
 		stroke-dashoffset: 0;
+	}
+	90% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 400;
 	}
 }
 @keyframes fade {
-	to {
+	0% {
+		opacity: 0;
+		transform: rotate(0deg);
+	}
+	20% {
 		opacity: 1;
+		transform: rotate(0deg);
+	}
+	39% {
+		opacity: 1;
+		transform: rotate(0deg);
+	}
+	40% {
+		transform: rotate(4deg);
+	}
+	41% {
+		transform: rotate(-4deg);
+	}
+	42% {
+		transform: rotate(4deg);
+	}
+	43% {
+		transform: rotate(-4deg);
+	}
+	45% {
+		transform: rotate(4deg);
+	}
+	46% {
+		transform: rotate(0deg);
+	}
+	90% {
+		opacity: 1;
+		transform: rotate(0deg);
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(0deg);
 	}
 }
