@@ -1,21 +1,53 @@
-.tutorial {
+.guide-text,
+.guide-arrow {
 	position: fixed;
-	right: 44px;
-	bottom: 264px;
-	background: #ababab;
-	width: 300px;
+	color: #19191a;
+	transition: all 300ms ease;
+}
+.darkmode--enabled .guide-text,
+.darkmode--enabled .guide-arrow {
+	position: fixed;
 	color: #fff;
-	padding: 16px;
-	border-radius: 10px;
 }
-.tutorial-arrow {
-	position: fixed;
-	right: 84px;
-	bottom: 20px;
-	width: 300px;
-	height: auto;
-	transform: rotate(25deg);
+.guide-text {
+	bottom: 164px;
+	right: 70px;
+	opacity: 0;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+	animation-name: fade;
+	font-weight: bold;
 }
-.tutorial-arrow path {
-	stroke: #ababab;
+.guide-arrow {
+	bottom: 74px;
+	right: 80px;
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+	.draw-arrow {
+		stroke-width: 5;
+		stroke: currentColor;
+		fill: none;
+		stroke-dasharray: 400;
+		stroke-dashoffset: 400;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		animation-name: draw;
+		&.tail-1 {
+			animation-delay: 0.5s;
+		}
+		&.tail-2 {
+			animation-delay: 0.7s;
+		}
+	}
+}
+@keyframes draw {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes fade {
+	to {
+		opacity: 1;
+	}
 }
