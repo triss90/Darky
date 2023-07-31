@@ -47,7 +47,7 @@
 	<li><strong>label.light:</strong> (String) HTML content for the light mode button label. Defaults to a SVG sun icon.</li>
 	<li><strong>saveInCookies:</strong> (Boolean) if set to true, the user's preference will be saved in a cookie. Defaults to false.</li>
 	<li><strong>autoMatchOsTheme:</strong> (Boolean) if set to true, the color theme will automatically match the user's OS preference. Defaults to true.</li>
-	<li><strong>onChnge:</strong> (Function) Provides a callback whenever darkmode is toggled on or off. Defaults to false</li>
+	<li><strong>onChnge:</strong> (Function) Provides a callback whenever darkmode is toggled on or off. Defaults to false.</li>
 </ul>
 <h4>Example:</h4>
 <pre><code class="language-javascript">const options = {
