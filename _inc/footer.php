@@ -14,6 +14,22 @@
 			<a href="/lib/1.1.2/darky.min.js" download>Download</a> ·
 			<a href="https://github.com/triss90/Darky/issues/new?assignees=&labels=&projects=&template=feature_request.md&title=I want a new feature!" target="_blank">Request feature</a> ·
 			<a href="https://github.com/triss90/Darky/issues/new?assignees=&labels=&projects=&template=bug_report.md&title=I found a bug!" target="_blank">Report bug</a>
+		
+			<br><br>
+
+			<div id="badge"></div>
+			<script src="https://cdn.jsdelivr.net/npm/co2.observer@1.2.0/badge.min.js"></script>
+			<script>
+			const myBadge = new Badge({
+				target: '#badge',
+				key: '425e5e5a59100505494518044548594f585c4f580559435e4f05155f5846174e4b584153044b5a5a066b01061a041a194d0a696518055c434f5d0669464f4b444f580a5e424b440a131c0f0a454c0a5a4b4d4f590a5e4f595e4f4e',
+				backgroundColor: '#fff', 
+				logoColor: '#f40076',
+				textColor: '#19191a',
+				borderColor: '#f40076'
+			});
+			myBadge.init();
+			</script>
 		</div>
 	</section>
 </footer>
