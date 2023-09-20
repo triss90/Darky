@@ -21,7 +21,7 @@
 <p>Include the Darky.js library in your HTML file and Instantiate a new Darky object to add a darkmode toggle to your webpage:</p>
 
 <h4>The easy way (JSDelivr CDN)</h4>
-<pre><code class="language-html">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/darkyjs@1.2.0/1.2.0/darky.min.js&quot;&gt;&lt;/script&gt;
+<pre><code class="language-html">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/darkyjs@1.2.0/darky.min.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   const darkmode = new Darky();
   darkmode.enable();
