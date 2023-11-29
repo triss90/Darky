@@ -1,0 +1,40 @@
+{
+	"name": "darkyjs",
+	"version": "1.2.1",
+	"description": "A light, easy-to-use JavaScript library that allows developers to quickly and efficiently implement dark mode on their websites. This library dynamically changes the CSS styles of your website to provide a night mode effect that reduces the light emitted by the screen.",
+	"keywords": [
+		"DarkModeJS",
+		"JavaScript Dark Mode Library",
+		"Enable Dark Mode with JavaScript",
+		"Web Dark Mode Solution",
+		"Implement Dark Mode on Website",
+		"Easy Dark Mode JavaScript",
+		"Dynamic Theme Change JavaScript",
+		"Dark Mode for Web Developers",
+		"Dark Mode CSS Transformation",
+		"JavaScript Library for Dark Mode",
+		"Night Mode Web Development",
+		"Web Design Dark Mode JavaScript",
+		"Light/Dark Theme Switch JavaScript",
+		"Dark Mode Toggle JS",
+		"User Preference Dark Mode JavaScript",
+		"Web Content Accessibility Guidelines Dark Mode",
+		"WCAG Dark Mode Implementation",
+		"Dark Theme JS Library",
+		"Dark Mode for Web Accessibility",
+		"Dark Mode Color Preservation JS",
+		"Reduce Screen Light Emission with JS",
+		"Dark Mode JS for UI/UX",
+		"Web Aesthetics Dark Mode JavaScript",
+		"Create Dark Mode with JS",
+		"Dark Mode User Experience Enhancement"
+	],
+	"main": "darky.min.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/triss90/Darky"
+	},
+	"author": "Tristan White",
+	"homepage": "https://darky.app/",
+	"license": "MIT"
+}

@@ -12,7 +12,7 @@ Include the Darky.js library in your HTML file and Instantiate a new Darky objec
 
 ### The easy way (JSDelivr CDN)
 ```js
-<script src="https://cdn.jsdelivr.net/npm/darkyjs@1.2.1/darky.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkyjs@1.2.0/1.2.0/darky.min.js"></script>
 <script>
     const darkmode = new Darky();
     darkmode.enable();
